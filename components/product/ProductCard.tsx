@@ -60,6 +60,26 @@ export default function ProductCard({ product }: { product: Product }) {
             {product.shortDescription}
           </p>
 
+          {/* Highlights */}
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+            {[
+              "Laddningsbar via USB",
+              "Spelar glad musik",
+              "Upptäck grundläggande fysik",
+            ].map((label) => (
+              <div key={label} className="flex items-center gap-1.5">
+                <div
+                  className="w-2 h-2 rounded-full flex-shrink-0"
+                  style={{ background: "var(--color-coral)" }}
+                  aria-hidden="true"
+                />
+                <span className="text-sm font-semibold" style={{ color: "var(--color-text-muted)" }}>
+                  {label}
+                </span>
+              </div>
+            ))}
+          </div>
+
           {/* Price */}
           <div className="flex items-baseline gap-3">
             {product.price !== null ? (

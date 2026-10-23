@@ -12,7 +12,7 @@ export const siteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://lillaplay.se",
   locale: "sv-SE",
   currency: "SEK",
-  logo: "/logo.jpg",
+  logo: "/logo.png",
   // PLACEHOLDER — client to confirm before launch
   contactEmail: "[E-POSTADRESS SAKNAS]",
   contactPhone: "[TELEFONNUMMER SAKNAS]",

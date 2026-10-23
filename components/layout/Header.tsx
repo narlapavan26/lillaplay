@@ -30,10 +30,10 @@ export default function Header() {
         id="site-header"
         className="fixed top-0 left-0 right-0 z-40 transition-all duration-300"
         style={{
-          background: scrolled ? "rgba(255,250,247,0.95)" : "transparent",
-          backdropFilter: scrolled ? "blur(12px)" : "none",
+          background: scrolled ? "rgba(255,250,247,0.95)" : "rgba(20,11,30,0.35)",
+          backdropFilter: scrolled ? "blur(12px)" : "blur(10px)",
           boxShadow: scrolled ? "var(--shadow-sm)" : "none",
-          borderBottom: scrolled ? "1px solid var(--color-border)" : "1px solid transparent",
+          borderBottom: scrolled ? "1px solid var(--color-border)" : "1px solid rgba(255,255,255,0.08)",
         }}
       >
         <div className="container">
@@ -43,11 +43,11 @@ export default function Header() {
               <Image
                 src={siteConfig.logo}
                 alt="LillaPlay"
-                width={200}
-                height={73}
+                width={260}
+                height={95}
                 className="object-contain"
                 priority
-                style={{ height: "34px", width: "auto" }}
+                style={{ height: "46px", width: "auto" }}
               />
             </Link>
 

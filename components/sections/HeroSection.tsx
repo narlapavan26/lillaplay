@@ -46,9 +46,9 @@ export default function HeroSection() {
             className="text-display text-white mb-5"
             style={{ animation: "fadeUp 0.6s 0.2s var(--ease-bounce) both" }}
           >
-            Håll i båda handtagen —{" "}
+            Leksaker som väcker{" "}
             <span style={{ color: "var(--color-amber)" }}>
-              så börjar musiken!
+              nyfikenhet och glädje
             </span>
           </h1>
 
@@ -60,14 +60,14 @@ export default function HeroSection() {
               animation: "fadeUp 0.6s 0.35s var(--ease-bounce) both",
             }}
           >
-            Queaky Charge är en uppladdningsbar leksak som spelar glad musik
-            när ditt barn sluter kretsen. Lek, utforska och upptäck fysikens
-            lilla under.
+            Hos LillaPlay hittar du leksaker som bjuder in till lek,
+            utforskande och små aha-ögonblick — skapade för nyfikna barn
+            i alla åldrar.
           </p>
 
           {/* CTAs */}
           <div
-            className="flex flex-wrap gap-3 mb-12"
+            className="flex flex-wrap gap-3"
             style={{ animation: "fadeUp 0.6s 0.5s var(--ease-bounce) both" }}
           >
             <Link href="/#product" className="btn btn-primary btn-lg" id="hero-cta-primary">
@@ -76,29 +76,6 @@ export default function HeroSection() {
             <Link href="/#how-it-works" className="btn btn-ghost btn-lg" id="hero-cta-secondary">
               Så fungerar den
             </Link>
-          </div>
-
-          {/* Feature pills */}
-          <div
-            className="flex flex-wrap items-center gap-6"
-            style={{ animation: "fadeUp 0.6s 0.65s var(--ease-bounce) both" }}
-          >
-            {[
-              "Laddningsbar via USB",
-              "Spelar glad musik",
-              "Upptäck grundläggande fysik",
-            ].map((label) => (
-              <div key={label} className="flex items-center gap-1.5">
-                <div
-                  className="w-2 h-2 rounded-full flex-shrink-0"
-                  style={{ background: "var(--color-amber)" }}
-                  aria-hidden="true"
-                />
-                <span className="text-sm font-semibold" style={{ color: "rgba(255,255,255,0.80)" }}>
-                  {label}
-                </span>
-              </div>
-            ))}
           </div>
         </div>
       </div>
